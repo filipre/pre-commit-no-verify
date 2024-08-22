@@ -27,6 +27,18 @@ $ pre-commit run --all-files
 check for added large files..............................................Passed
 ```
 
+Clean pre-commit
+```
+$ pre-commit clean
+Cleaned /Users/rene.filip/.cache/pre-commit.
+$ pre-commit run --all-files
+[INFO] Initializing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Installing environment for https://github.com/pre-commit/pre-commit-hooks.
+[INFO] Once installed this environment will be reused.
+[INFO] This may take a few minutes...
+check for added large files..............................................Passed
+```
+
 Clone repository
 ```
 $ git clone git@github.com:filipre/pre-commit-no-verify.git pre-commit-no-verify2
@@ -38,3 +50,4 @@ $ git add 20kb.txt
 $ git commit -m "Change"
 check for added large files..............................................Passed
 ```
+
