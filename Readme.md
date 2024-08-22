@@ -1,7 +1,6 @@
 # Readme
 
 New repository
-
 ```
 $ pre-commit install
 
@@ -25,5 +24,17 @@ $ git add 20kb.txt
 $ git commit -m "Change 20kb file"
 check for added large files..............................................Passed
 $ pre-commit run --all-files
+check for added large files..............................................Passed
+```
+
+Clone repository
+```
+$ git clone git@github.com:filipre/pre-commit-no-verify.git pre-commit-no-verify2
+$ pre-commit install
+pre-commit installed at .git/hooks/pre-commit
+
+# Change 20kb.txt file
+$ git add 20kb.txt
+$ git commit -m "Change"
 check for added large files..............................................Passed
 ```
